@@ -1,0 +1,25 @@
+// app global css in SCSS form
+
+.q-textarea .q-field__native{
+    height: 80px
+}
+
+@media (prefers-color-scheme: dark) {
+    .q-page {
+        background-color: $dark;
+        &>.text-dark, .text-dark.prefers-color{
+            color:#fff !important;
+        }
+    }
+}
+
+.q-table {
+    th{
+        background: rgba(200,200,200,0.1);
+        color: #888;
+        text-align: center;
+        position: relative;
+        border-left: 2px solid rgba(255,255,255,0.5);
+        border-right: 2px solid rgba(255,255,255,0.5);
+    }
+}
