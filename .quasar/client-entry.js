@@ -46,7 +46,10 @@ import quasarUserOptions from './quasar-user-options.js'
 
 
 
-const publicPath = `/`
+const publicPath = `/doctorado-humanidades-app/`
+
+const doubleSlashRE = /\/\//
+const addPublicPath = url => (publicPath + url).replace(doubleSlashRE, '/')
 
 
 async function start ({ app, router, store, storeKey }, bootFiles) {
@@ -55,7 +58,7 @@ async function start ({ app, router, store, storeKey }, bootFiles) {
   
   let hasRedirected = false
   const getRedirectUrl = url => {
-    try { return router.resolve(url).href }
+    try { return addPublicPath(router.resolve(url).href) }
     catch (err) {}
 
     return Object(url) === url
