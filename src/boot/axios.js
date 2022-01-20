@@ -8,7 +8,8 @@ import { useStore } from 'vuex'
 // "export default () => {}" function below (which runs individually
 // for each client)
 const api = axios.create({ 
-  baseURL: 'https://previo.website/dochum/service/api'
+  //baseURL: 'https://previo.website/dochum/service/api'
+  baseURL: 'https://dhumanidades.xoc.uam.mx/admin/api'
 })
 
 

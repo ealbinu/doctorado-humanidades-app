@@ -18,7 +18,7 @@ q-page.flex.flex-center.column
     q-card-section
       
       q-img(src="~/assets/logouam.png")
-  q-card.q-ma-sm.fixed-bottom-left
+  //q-card.q-ma-sm.fixed-bottom-left
     q-card-section.text-center
       div.text-grey.text-bold
         span usuario

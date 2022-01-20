@@ -46,7 +46,7 @@ import quasarUserOptions from './quasar-user-options.js'
 
 
 
-const publicPath = `/doctorado-humanidades-app/`
+const publicPath = `/sistema/`
 
 const doubleSlashRE = /\/\//
 const addPublicPath = url => (publicPath + url).replace(doubleSlashRE, '/')
